@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ce2afc93-5bb6-4b43-8c67-1f928ad5895e/resourceGroups/wxmpchat_group/providers/Microsoft.Web/sites/wxmpchatproxy",
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}

@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+var httpProxy = require("../http-proxy");
+var proxyPort = normalizePort(process.env.PROXY_PORT || "80");
+
+httpProxy.listen(proxyPort, () => {
+  console.log(`Proxy server listening on port ${proxyPort}`);
+});
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}

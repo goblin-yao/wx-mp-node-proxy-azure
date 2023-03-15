@@ -1,0 +1,19 @@
+{
+  "name": "wxmpnodeproxyapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "debug": "DEBUG=wxmpnodeproxyapp:* npm start",
+    "dev": "PORT=3000 nodemon --exec 'npm run debug'"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
